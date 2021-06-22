@@ -16,7 +16,7 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        // This references the `driver` model, which we set in `Driver.js` as its `modelName` property
+        // This references the `product` model, which we set in `Product.js` as its `modelName` property
         model: 'product',
         key: 'id',
       },
@@ -24,7 +24,7 @@ ProductTag.init(
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        // This references the `driver` model, which we set in `Driver.js` as its `modelName` property
+        // This references the `tag` model, which we set in `Tag.js` as its `modelName` property
         model: 'tag',
         key: 'id',
       },
