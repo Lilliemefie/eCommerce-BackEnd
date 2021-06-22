@@ -2,10 +2,33 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
 
-class ProductTag extends Model {}
+class ProductTag extends Model { }
 
 ProductTag.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    product_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references the `driver` model, which we set in `Driver.js` as its `modelName` property
+        model: 'product',
+        key: 'id',
+      },
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references the `driver` model, which we set in `Driver.js` as its `modelName` property
+        model: 'tag',
+        key: 'id',
+      },
+    },
+
     // define columns
   },
   {
