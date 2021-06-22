@@ -33,15 +33,23 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
+  try{
+    const locationData = await Category.create ({
+      product_id: req.body.product_id, // do we need to put product_id???
+    });
+    res.status(200).json(locationData);
+  } catch (err){
+    res.status(400).json(err);
+  }
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
   // update a category by its `id` value
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
 });
 
