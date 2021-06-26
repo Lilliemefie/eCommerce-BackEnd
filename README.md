@@ -55,5 +55,5 @@ This application was tested 🧪 on [Insomnia Core](https://insomnia.rest/produc
 ## Questions :memo:
 If you have any questions or want to make a contribution please reach out to me here: 
 
-* [GitHub](https://github.com/https://github.com/lilliemefie/)  
+* [GitHub](https://github.com/lilliemefie/)  
 * Email: lilliejira@gmail.com
