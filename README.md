@@ -32,7 +32,7 @@ This application will allow users to view, create, update, and delete categories
 
 [Click Here](https://drive.google.com/file/d/1EyAJwVeNng_EiG54blSU-L0dny-YE-mX/view?usp=sharing), to view the video walk through
 
-![Screenshot](https://drive.google.com/file/d/1HGEGCY4mrHOnDf399JMFfNDZXglpiEYX/view?usp=sharing)
+![Screenshot](https://github.com/Lilliemefie/eCommerce-BackEnd/blob/main/assets/Screen%20Shot%20e-commerce.png)
 
 
 ## Tool and Technologies 
